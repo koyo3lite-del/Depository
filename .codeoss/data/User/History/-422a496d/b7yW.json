@@ -1,0 +1,19 @@
+{
+    "chat.commandCenter.enabled": false,
+    "window.commandCenter": true,
+    "http.proxySupport": "off",
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "redhat.telemetry.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.autoDetectColorScheme": true,
+    "geminicodeassist.beta.enableCodeDocumentationView": false,
+    "geminicodeassist.project": "cloudshell-gca",
+    "terminal.integrated.defaultProfile.linux": "Google Cloud Shell",
+    "window.menuBarVisibility": "classic",
+    "terminal.integrated.commandsToSkipShell": [
+        "editor.action.accessibilityHelp editor.action.toggleTabFocusMode notification.acceptPrimaryAction notifications.hideList notifications.hideToasts runCommands [...]",
+        ""
+    ],
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never"
+}
