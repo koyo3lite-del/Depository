@@ -50,9 +50,9 @@ def load_and_process_json(filename):
     with open(filename, 'r') as f:
         data = json.load(f)  # Direct JSON parsing
     
-    # Optimization 7: Return data directly if no transformation needed
-    # Or use list comprehension for shallow copy if needed
-    return data if not data else [item.copy() for item in data]
+    # Optimization 7: Return data directly or create shallow copies if needed
+    # For this example, create shallow copies to match original behavior
+    return [item.copy() for item in data] if data else []
 
 
 def search_in_list(large_list, target):

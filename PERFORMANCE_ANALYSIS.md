@@ -402,12 +402,12 @@ Counter()  # for counting
 arr.filter().map().reduce()  // not: multiple loops
 
 // Modern data structures
-new Set()  # for uniqueness
-new Map()  # for key-value pairs
+new Set()  // for uniqueness
+new Map()  // for key-value pairs
 
 // Batch operations
-Promise.all()  # not: sequential awaits
-DocumentFragment  # not: individual DOM appends
+Promise.all()  // not: sequential awaits
+DocumentFragment  // not: individual DOM appends
 ```
 
 ## Recommendations for Production
