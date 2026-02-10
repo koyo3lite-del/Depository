@@ -75,7 +75,7 @@ echo ""
 
 # 6. Test supervisor configuration
 echo "✓ Testing Supervisor configuration..."
-supervisord -c automation/supervisord/supervisord.ini 2>&1
+supervisord -c automation/supervisord/supervisord.ini > /dev/null 2>&1
 sleep 3
 
 STATUS=$(supervisorctl -c automation/supervisord/supervisord.ini status 2>&1)
@@ -98,7 +98,7 @@ echo ""
 
 # 8. Cleanup
 echo "✓ Cleaning up..."
-supervisorctl -c automation/supervisord/supervisord.ini shutdown 2>&1
+supervisorctl -c automation/supervisord/supervisord.ini shutdown > /dev/null 2>&1
 sleep 2
 echo "  ✓ Supervisor shut down"
 echo ""
