@@ -20,11 +20,17 @@ This guide covers the following performance optimization topics:
 ## Quick Start
 
 ```bash
+# Run visual performance benchmarks with detailed comparison
+python benchmark.py
+
 # Run the slow code examples
 python slow_code_example.py
 
 # Run the optimized code examples with benchmarks
 python optimized_code_example.py
+
+# Run the comprehensive test suite
+python test_performance.py
 ```
 
 ## Performance Issues and Solutions
@@ -250,31 +256,59 @@ users = User.query.options(joinedload(User.posts)).all()
 
 ## Performance Testing
 
-Run the benchmark comparisons:
+### Visual Benchmarks
+
+Run the comprehensive benchmark suite with visual results:
+
+```bash
+python benchmark.py
+```
+
+Sample output:
+```
+================================================================================
+                    PERFORMANCE OPTIMIZATION BENCHMARKS
+================================================================================
+
+📊 BENCHMARK 1: String Concatenation
+--------------------------------------------------------------------------------
+  Test size:      1,000
+  Slow version:   369.07 μs
+  Fast version:   99.42 μs
+  Speedup:        3.71x faster
+  Visual:         Slow: ██████████████████████████████████████████████████
+                  Fast: █████████████
+
+...
+
+================================================================================
+                              SUMMARY
+================================================================================
+Optimization                      Speedup
+--------------------------------------------------------------------------------
+String Concatenation                  3.71x
+List Building                        76.20x
+Membership Testing                   80.31x
+Nested Loops                        211.62x
+--------------------------------------------------------------------------------
+Geometric Mean Speedup               20.08x
+================================================================================
+```
+
+### Detailed Comparison
+
+Run the detailed benchmarks:
 
 ```python
 python optimized_code_example.py
 ```
 
-Sample output:
-```
-Performance Comparison:
-============================================================
+### Test Suite
 
-1. String Concatenation:
-   Slow version: 0.0234s
-   Fast version: 0.0002s
-   Speedup: 117.00x
+Run the comprehensive test suite with correctness validation:
 
-2. List Building:
-   Slow version: 0.0456s
-   Fast version: 0.0001s
-   Speedup: 456.00x
-
-3. Membership Testing:
-   Slow version: 0.2134s
-   Fast version: 0.0003s
-   Speedup: 711.33x
+```python
+python test_performance.py
 ```
 
 ## Best Practices Summary
