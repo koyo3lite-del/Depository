@@ -51,6 +51,23 @@ supervisorctl -c automation/supervisord/supervisord.ini status
 pytest
 ```
 
+### 5. Verify Complete Setup
+
+Run the verification script to ensure all components are working:
+
+```bash
+./verify_setup.sh
+```
+
+This will check:
+- Directory structure
+- Required files
+- Virtual environment
+- Package installation
+- Test execution
+- Supervisor functionality
+- Refresh script operation
+
 ## Management Commands
 
 ### Refresh All Agents
