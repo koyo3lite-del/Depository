@@ -114,8 +114,8 @@ class SlowDataProcessor:
             try:
                 data = json.loads(json_str)
                 results.append(data)
-            except:
-                pass  # Bare except is also bad practice
+            except Exception:
+                pass  # Bad practice: too broad exception handling
         return results
     
     def inefficient_dictionary_access(self, data_dict, keys):

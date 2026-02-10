@@ -112,14 +112,8 @@ class OptimizedDataProcessor:
         OPTIMIZED: Using dict.get() with default value for single lookup.
         Performance improvement: 2x faster due to single lookup
         """
-        results = []
-        for key in keys:
-            value = data_dict.get(key)
-            if value is not None:
-                results.append(value)
-            else:
-                results.append(0)
-        return results
+        # Using get() with default eliminates the need for membership check
+        return [data_dict.get(key, 0) for key in keys]
 
 
 def optimized_query_with_join():

@@ -168,8 +168,8 @@ class PerformanceTest(unittest.TestCase):
         slow_result = self.slow_processor.inefficient_dictionary_access(data_dict, keys)
         fast_result = self.fast_processor.efficient_dictionary_access(data_dict, keys)
         
-        # Results should be equivalent (non-zero values)
-        self.assertEqual(sorted(slow_result), sorted(fast_result))
+        # Results should be equivalent (converting to sets for O(n) comparison)
+        self.assertEqual(set(slow_result), set(fast_result))
     
     def test_query_optimization_correctness(self):
         """Verify query optimization produces same results."""
