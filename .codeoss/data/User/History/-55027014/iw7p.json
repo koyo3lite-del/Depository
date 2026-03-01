@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.*": true
+    },
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "editor.action.accessibilityHelp",
+        "editor.action.toggleTabFocusMode",
+        ""
+    ]
+}
