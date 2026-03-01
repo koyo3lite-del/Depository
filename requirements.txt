@@ -1,0 +1,6 @@
+# Python dependencies for performance optimization examples
+# No external dependencies required - all examples use standard library
+
+# Optional: For profiling and performance analysis
+# line-profiler==4.1.1
+# memory-profiler==0.61.0
