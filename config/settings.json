@@ -1,0 +1,12 @@
+{
+  "timezone": "UTC",
+  "dry_run": false,
+  "content_dir": "content/posts",
+  "log_level": "INFO",
+  "retry_attempts": 3,
+  "retry_delay_seconds": 5,
+  "schedule": {
+    "post_hour_utc": 12,
+    "post_minute_utc": 0
+  }
+}

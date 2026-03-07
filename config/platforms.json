@@ -1,0 +1,18 @@
+{
+  "twitter": {
+    "enabled": true,
+    "api_key_env": "TWITTER_API_KEY",
+    "api_secret_env": "TWITTER_API_SECRET",
+    "access_token_env": "TWITTER_ACCESS_TOKEN",
+    "access_token_secret_env": "TWITTER_ACCESS_TOKEN_SECRET",
+    "bearer_token_env": "TWITTER_BEARER_TOKEN",
+    "max_tweet_length": 280
+  },
+  "instagram": {
+    "enabled": true,
+    "access_token_env": "INSTAGRAM_ACCESS_TOKEN",
+    "user_id_env": "INSTAGRAM_USER_ID",
+    "graph_api_version": "v18.0",
+    "graph_api_base": "https://graph.facebook.com"
+  }
+}
